@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS" >
+            <children>
+                <Accordion layoutX="118.0" layoutY="90.0" />
+                <Button layoutX="118.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Easy" onAction="#changeWindow_ModeEasy">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Button>
+                <Label blendMode="SRC_ATOP" cache="true" layoutX="270.0" layoutY="90.0" prefHeight="44.0" prefWidth="100.0" text="Greedy ">
+                    <font>
+                        <Font name="Impact" size="32.0" />
+                    </font>
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </Label>
+                <Button layoutX="270.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Medium" onAction="#changeWindow_ModeMedium">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="428.0" layoutY="230.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Hard" onAction="#changeWindow_ModeHard">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Button>
+                <Label layoutX="279.0" layoutY="134.0" text="Snake">
+                    <font>
+                        <Font name="Impact" size="32.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
